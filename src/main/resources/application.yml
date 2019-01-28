@@ -10,11 +10,11 @@ spring:
         druid:
           #监控统计拦截的filters
           filters: stat
-          driver-class-name: com.mysql.cj.jdbc.Driver
+          driver-class-name: com.mysql.jdbc.Driver
           #基本属性
-          url: jdbc:mysql://127.0.0.1:3306/mytest?useUnicode=true&characterEncoding=UTF-8&userSSL=false&serverTimezone=GMT%2B8
+          url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
           username: root
-          password: nmefc62105799
+          password: admin123
           #配置初始化大小/最小/最大
           initial-size: 1
           min-idle: 1
@@ -44,8 +44,3 @@ pagehelper:
     supportMethodsArguments: true
     params: count=countSql
     returnPageInfo: check
----------------------
-作者：LuisChen的博客
-来源：CSDN
-原文：https://blog.csdn.net/Winter_chen001/article/details/80010967
-版权声明：本文为博主原创文章，转载请附上博文链接！
